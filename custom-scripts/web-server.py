@@ -5,7 +5,7 @@ import sys
 
 class MyRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
-        self.path = '../index.html'
+        self.path = '$BASE_DIR/../etc/index.html'
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 Handler = MyRequestHandler
