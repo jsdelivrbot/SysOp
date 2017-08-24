@@ -5,7 +5,10 @@
 
   cp $BASE_DIR/../custom-scripts/web-server.py $BASE_DIR/target/etc
   chmod +x $BASE_DIR/target/etc/web-server.py
-  
+
+  cp $BASE_DIR/../custom-scripts/system-info.sh $BASE_DIR/target/etc
+  chmod +x $BASE_DIR/target/etc/system-info.sh
+
   cp $BASE_DIR/../custom-scripts/index.html $BASE_DIR/target/etc
   
   cp $BASE_DIR/../custom-scripts/Sweb-server-config $BASE_DIR/target/etc/init.d
