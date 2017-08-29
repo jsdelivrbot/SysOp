@@ -1,7 +1,7 @@
 #!/bin/sh
-  date
-  uptime
-  cat /proc/cpuinfo
-  top -n 1 -b
-  uname -mrs
+  date > "date.txt"
+  uptime > "uptime.txt"
+  grep "model name" /proc/cpuinfo > "cpuinfo.txt"
+  top -n 1 -b > "top.txt"
+  uname -mrs > "version.txt"
 
